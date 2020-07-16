@@ -15,7 +15,7 @@ spring:
         - id: store
           uri: http://localhost:8082
           predicates:
-            - Path=/sales/**
+            - Path=/saleses/**
         - id: pay
           uri: http://localhost:8083
           predicates:
@@ -23,7 +23,7 @@ spring:
         - id: storesales
           uri: http://localhost:8084
           predicates:
-            - Path=/storesales/**
+            - Path=/storeSalesViews/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -50,7 +50,7 @@ spring:
         - id: store
           uri: http://store:8080
           predicates:
-            - Path=/sales/**
+            - Path=/saleses/**
         - id: pay
           uri: http://pay:8080
           predicates:
@@ -58,7 +58,7 @@ spring:
         - id: storesales
           uri: http://storesales:8080
           predicates:
-            - Path=/storesales/**
+            - Path=/storeSalesViews/**
       globalcors:
         corsConfigurations:
           '[/**]':
